@@ -1,0 +1,97 @@
+/*
+   Arquivo CSS Mobile First padrão
+   ---------------------------------
+
+   Este arquivo fornece um ponto de partida para criar um layout responsivo.
+   Ele é projetado com a abordagem "Mobile First", o que significa que o estilo
+   para dispositivos móveis é definido primeiro e, em seguida, são adicionados
+   estilos para dispositivos de desktop por meio de media queries.
+*/
+/*Root*/
+:root {
+  /* Cores */
+  
+    --primary-100:#00ccff;
+    --primary-200:#6eb7ff;
+    --primary-300:#e4ffff;
+    --accent-100:#FF6AFF;
+    --accent-200:#94009a;
+    --text-100:#FFFFFF;
+    --text-200:#e0e0e0;
+    --bg-100:#161616;
+    --bg-200:#252525;
+    --bg-300:#3c3c3c;
+
+  /*cores dos logos de Redes sociais */
+  --instagram-pink: #e54784;
+  --twitter-blue: #1c9cea;
+  --facebook-blue: #3b5998;
+  --linkedin-blue: #0077b5;
+  --whatsapp-green: #25d366;
+  --website-green: #2ecc71;
+
+  /* Fontes */
+  --fonte-titulo: "Open Sans", sans-serif;
+  --fonte-corpo: "Open Sans", sans-serif;
+  --fonte-mono: "Fira Code", monospace;
+
+  /*sombras*/
+
+}
+
+/* Reset CSS básico */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+body {
+  font-family: var(--fonte-corpo);
+  font-size: 16px;
+  color: var(--black-1);
+  background-color: var(--white-1);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+/*
+Estilos da pagina
+*/
+
+/*Media Queries Desktop, tablets, Tvs...*/
+/* Estilos para tablets*/
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Estilos para desktops */
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+/* Estilos para widescreen */
+@media only screen and (min-width: 1440px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+/* Estilos para telas ultrawide */
+@media only screen and (min-width: 2560px) {
+  body {
+    font-size: 26px;
+  }
+}
