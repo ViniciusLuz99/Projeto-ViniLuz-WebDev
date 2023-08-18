@@ -4,104 +4,462 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <link rel="stylesheet" href="./Assets/Css/mobilenav.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="./Assets/FontAwesome/css/all.min.css" />
   </head>
   <body>
     <header>
-      <section id="mobile"></section>
+      <section id="mobile">
+        <nav id="mobile-nav">
+          <div class="navbar">
+            <div class="logo">
+              <h2>Logo</h2>
+            </div>
+            <button class="openbtn" onclick="navToggler()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </button>
+          </div>
+          <ul id="mobile-menu" class="">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+      </section>
       <section id="desktop"></section>
     </header>
     <main>
       <section id="home">
-        <div class="home-content">
+        <div class="home-content flexCenter">
           <section class="home-text">
-            <h1>Moldando o Digital ao Seu Estilo</h1>
+            <h1>
+              Moldando o Digital<br />
+              ao Seu Estilo
+            </h1>
             <p>
-              Transforme visitantes em clientes com nossas landing pages feitas
-              sob medida, Capturamos a essência do seu negócio em cada pixel.
-              Potencialize sua presença online hoje mesmo
+              <strong>Transforme visitantes em clientes</strong>, Potencialize sua presença
+              online com uma landing page profissional.
             </p>
           </section>
           <section class="btn-container">
             <a class="whatsapp-btn" href="#" target="_blank">
-              <p><span>#</span>Comece Agora</p>
+              <span><i class="fab fa-whatsapp"></i></span>Comece Agora
             </a>
+          </section>
+          <section class="discount-section">
+            <div class="discount-content">
+              <p class="discount-text">
+                <span><i class="far fa-clock"></i></span>
+                Comece agora e aproveite um desconto exclusivo na criação da sua landing page.
+              </p>
+            </div>
           </section>
         </div>
       </section>
-      <section id="about">
-        <div class="about-content">
-          <section class="about-text">
-            <h2>Por Que Escolher Nós?</h2>
-            <p>
-              Utilizamos tecnologias avançadas - HTML5, CSS3 e JavaScript - para
-              criar experiências online incríveis. Mas essa parte do código é
-              com a gente.
-            </p>
-            <p>
-              As landing pages serão de alta qualidade, rápidas e se adaptarão a
-              qualquer dispositivo. Enquanto isso acontece, você vê visitantes
-              se tornando clientes.
-            </p>
-            <p>
-              Nossa abordagem não é apenas técnica, é estratégica. Trabalhamos
-              para entender a essência do seu negócio, para que suas landing
-              pages não sejam apenas bonitas, mas também eficazes em direcionar
-              resultados.
-            </p>
+      <div class="desktop-row mobile-collumn">
+        <section id="about">
+          <div class="about-content">
+            <section class="about-text">
+              <h2>Por Que Escolher Nós?</h2>
+              <p>
+                As landing pages serão de alta qualidade, rápidas e se adaptarão
+                a qualquer dispositivo. Enquanto isso acontece, você vê
+                visitantes se tornando clientes.
+              </p>
+              <p>
+                Utilizo tecnologias avançadas - HTML5, CSS3 e JavaScript - para
+                criar experiências online incríveis. Mas essa parte do código
+                deixe pra gente!.
+              </p>
+              <p>
+                Trabalhomos com você para entender a essência do seu negócio,
+                para que suas landing pages não sejam apenas bonitas, mas também
+                eficazes em direcionar resultados.
+              </p>
+            </section>
+            <section class="btn-container">
+              <a class="whatsapp-btn" href="#" target="_blank">
+                <p>
+                  <span><i class="fab fa-whatsapp"></i></span>Quero minha
+                  landing page!
+                </p>
+              </a>
+            </section>
+          </div>
+        </section>
+        <section id="features">
+          <div class="features-content">
+            <section class="features-text">
+              <h2>Vantagens de Fazer Suas Páginas Conosco</h2>
+            </section>
+            <section class="features-cards-container">
+              <div class="feature-card">
+                <h3>
+                  Landing pages<br />
+                  Personalizadas
+                </h3>
+                <p>
+                  Destaque-se na web com nossas Landing Pages. Páginas
+                  meticulosamente criada para refletir a identidade da sua marca
+                  e direcionar ação. Transforme visitantes em clientes com
+                  nossas landing pages focadas em conversões.
+                </p>
+              </div>
+              <div class="feature-card">
+                <h3>S.E.O</h3>
+                <p>
+                  Maximize a visibilidade do seu site nos mecanismos de busca.
+                  Utilizamos técnicas avançadas de SEO para melhorar o
+                  posicionamento do seu site em buscadores como o Google.
+                </p>
+              </div>
+              <div class="feature-card">
+                <h3>Responsividade</h3>
+                <p>
+                  Seja em um desktop, tablet ou smartphone, suas landing pages
+                  se adaptarão perfeitamente a qualquer dispositivo, garantindo
+                  uma experiência consistente.
+                </p>
+              </div>
+              <div class="feature-card">
+                <h3>Suporte Dedicado</h3>
+                <p>
+                  Estamos comprometidos em fornecer suporte contínuo para
+                  garantir que suas landing pages permaneçam eficazes e
+                  atualizadas. Conte conosco para resolver quaisquer problemas e
+                  otimizar continuamente o desempenho das suas páginas.
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+
+      <section id="portfolio">
+        <div class="portfolio-content">
+          <section class="portfolio-text">
+            <h2>Alguns Projetos feito por mim</h2>
           </section>
-          <section class="btn-container">
+          <section class="portfolio-cards">
+            <div class="portfolio-card">
+              <div class="portfolio-card-img">
+                <picture>
+                  <source
+                    srcset="./Assets/Images/portfolioImgs/1.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./Assets/Images/portfolioImgs/1.png"
+                    type="image/png"
+                  />
+                  <img
+                    src="./Assets/Images/portfolioImgs/1.png"
+                    loading="lazy"
+                    alt="Projeto Bloger"
+                  />
+                </picture>
+              </div>
+              <div class="portfolio-card-button">
+                <a href="#">Ver o site</a>
+              </div>
+            </div>
+            <!---->
+          </section>
+        </div>
+      </section>
+      <section id="discount">
+        <div class="discount-content">
+          <h2>Oferta Especial!</h2>
+          <p class="discount-description">
+            <span><i class="far fa-clock"></i></span>
+            Comece agora e aproveite um desconto exclusivo na criação da sua
+            landing page. Não perca a oportunidade de ter uma presença online
+            impactante.
+          </p>
+          <div class="discount-button">
+            <a href="#" class="promo-btn" target="_blank">
+              <p>
+                <span><i class="fas fa-tags"></i></span>Obter Desconto
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="faq">
+        <div class="faq-content">
+          <section class="faq-text">
+            <h2>Perguntas Frequentes</h2>
+          </section>
+          <section class="faq-details">
+            <details>
+              <summary>Como Trabalhamos?</summary>
+              <p>
+                Estamos comprometidos em fornecer um processo transparente e
+                eficiente para transformar sua visão em realidade:
+              </p>
+              <ol>
+                <li>
+                  <strong>Entendimento:</strong> Começamos ouvindo você.
+                  Compreender suas metas e visão é essencial.
+                </li>
+                <li>
+                  <strong>Design Personalizado:</strong> Criamos um design que
+                  captura a essência da sua marca e atende aos seus objetivos.
+                </li>
+                <li>
+                  <strong>Desenvolvimento:</strong> Transformamos o design em
+                  código, usando tecnologias avançadas.
+                </li>
+                <li>
+                  <strong>Revisão:</strong> Compartilhamos o trabalho e ouvimos
+                  seu feedback para fazer ajustes necessários.
+                </li>
+                <li>
+                  <strong>Otimização:</strong> Garantimos que suas landing pages
+                  sejam rápidas, eficazes e responsivas.
+                </li>
+                <li>
+                  <strong>Entrega:</strong> Apresentamos suas landing pages
+                  finalizadas e prontas para atrair conversões.
+                </li>
+              </ol>
+              <p>
+                Este processo visa garantir que você receba landing pages de
+                alta qualidade que atendam às suas expectativas e necessidades.
+              </p>
+            </details>
+            <details>
+              <summary>Quais são os custos associados?</summary>
+              <p>
+                Os custos podem variar dependendo da complexidade do projeto.
+                Entre em contato conosco para discutir suas necessidades e
+                forneceremos um orçamento personalizado.
+              </p>
+            </details>
+            <details>
+              <summary>Quanto tempo leva para criar uma landing page?</summary>
+              <p>
+                O tempo de criação pode variar, mas geralmente depende da
+                complexidade do design e dos recursos necessários. Entraremos em
+                contato para discutir um prazo estimado.
+              </p>
+            </details>
+            <details>
+              <summary>Posso solicitar alterações após a entrega?</summary>
+              <p>
+                Sim, estamos aqui para garantir que você fique satisfeito.
+                Oferecemos revisões e ajustes conforme necessário para atender
+                às suas expectativas.
+              </p>
+            </details>
             <a class="whatsapp-btn" href="#" target="_blank">
-              <p><span>#</span>Quero minha landing page!</p>
+              <p>
+                <span><i class="fab fa-whatsapp"></i></span>
+                Ainda esta com duvidas?
+              </p>
             </a>
+            <!-- Adicione mais perguntas frequentes aqui -->
           </section>
         </div>
       </section>
-      <section id="features">
-        <div class="features-content">
-          <section class="features-text">
-            <h2>Vantagens de Fazer Suas Páginas Conosco</h2>
-          </section>
-          <section class="features-cards-container">
-            <div class="feature-card">
-              <h3>
-                Landing pages<br />
-                Personalizadas
-              </h3>
-              <p>
-                Destaque-se na web com nossas Landing Pages. Páginas
-                meticulosamente criada para refletir a identidade da sua marca e
-                direcionar ação. Transforme visitantes em clientes com nossas
-                landing pages focadas em conversões.
-              </p>
-            </div>
-            <div class="feature-card">
-              <h3>S.E.O</h3>
-              <p>
-                Maximize a visibilidade do seu site nos mecanismos de busca.
-                Utilizamos técnicas avançadas de SEO para melhorar o
-                posicionamento do seu site em buscadores como o Google.
-              </p>
-            </div>
-            <div class="feature-card">
-              <h3>Responsividade</h3>
-              <p>
-                Seja em um desktop, tablet ou smartphone, suas landing pages se
-                adaptarão perfeitamente a qualquer dispositivo, garantindo uma
-                experiência consistente.
-              </p>
-            </div>
-            <div class="feature-card">
-              <h3>Suporte Dedicado</h3>
-              <p>
-                Estamos comprometidos em fornecer suporte contínuo para garantir
-                que suas landing pages permaneçam eficazes e atualizadas. Conte
-                conosco para resolver quaisquer problemas e otimizar
-                continuamente o desempenho das suas páginas.
-              </p>
-            </div>
-          </section>
+      <section id="about" class="centerAll">
+        <h2 class="highlight">Sobre mim</h2>
+        <div class="profileCard">
+          <div class="profileHeader">
+            <img src="./Assets/img/profile/IMG_20210603_102.png" alt="#" />
+          </div>
+          <div class="profileBody">
+            <h3 class="ProfileName glitchAnim">Vinicius Luz</h3>
+            <p class="profileRole">Web Developer</p>
+            <p class="profileBio">
+              Apaixonado por tecnologia, Synthwave e Rock.<br />
+              Em busca constante de novas oportunidades para aprimorar minha
+              experiência.
+            </p>
+          </div>
+          <nav class="profileFooter">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Instagram "
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/viniciusluz99/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" target="_blank" rel="noopener noreferrer" title="Site"
+              ><i class="fas fa-globe"></i
+            ></a>
+            <a
+              href="https://github.com/ViniciusLuz99"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Github"
+              ><i class="fab fa-github"></i
+            ></a>
+          </nav>
+        </div>
+      </section>
+      <section id="contact">
+        <h2 class="highlight">Contato</h2>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <fieldset class="contact-field">
+              <legend>Informações de Contato</legend>
+              <fieldset>
+                <legend>Contato</legend>
+                <p class="contactLink">
+                  <a
+                    href="mailto:vinicius.reis.luz2@gmail.com"
+                    target="_blank"
+                    title="Email"
+                  >
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <span>Vinicius.reis.luz2@gmail.com</span>
+                </p>
+                <p class="contactLink">
+                  <a
+                    href="https://wa.me/55123456789"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Email"
+                  >
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                  <span>Indisponivel</span>
+                </p>
+              </fieldset>
+              <fieldset>
+                <legend>Adicione nas redes</legend>
+                <ul>
+                  <li>
+                    <p class="contactLink">
+                      <a
+                        href="https://github.com/ViniciusLuz99"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="GitHub"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <span>/ViniciusLuz99</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p class="contactLink">
+                      <a
+                        href="https://www.instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Instagram"
+                      >
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <span>@ViniLuz99</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p class="contactLink">
+                      <a
+                        href="https://www.linkedin.com/in/viniciusluz99/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="LinkedIn"
+                      >
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                      <span>/Viniciusluz99</span>
+                    </p>
+                  </li>
+                </ul>
+              </fieldset>
+            </fieldset>
+          </div>
+          <div class="emailContact">
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/xyyaaykw"
+              method="POST"
+            >
+              <fieldset class="ContactField">
+                <legend>Entre em contato por Email</legend>
+                <div class="formGroup">
+                  <label for="name">Nome:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Nome"
+                  />
+                </div>
+                <div class="formGroup">
+                  <label for="email">E-mail:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Exemplo@email.com"
+                  />
+                </div>
+                <div class="formGroup">
+                  <label for="message">Texto:</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    placeholder="Texto"
+                  ></textarea>
+                </div>
+                <div class="formGroup">
+                  <input type="submit" value="Enviar" class="btn-submit" />
+                </div>
+              </fieldset>
+            </form>
+          </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./Assets/Images/logo.png" alt="Logo da Empresa" />
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#features">Vantagens</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#faq">Perguntas Frequentes</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="./Assets/js/main.js"></script>
   </body>
 </html>

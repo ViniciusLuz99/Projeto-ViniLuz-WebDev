@@ -1,0 +1,99 @@
+/* Estilos para a seção de navegação móvel */
+
+#mobile {
+  display: block;
+}
+
+/* Estilos para a barra de navegação móvel */
+#mobile-nav {
+  background-color: #333333d8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Estilos para a área da barra de navegação */
+.navbar {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  border: 1px solid red;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para o logotipo */
+.logo {
+  margin-left: 20px;
+}
+
+/* Estilos para o botão do menu hamburguer */
+.openbtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 15px 20px;
+  outline: none;
+}
+
+/* Estilos para as barras do botão hamburguer */
+.bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Estilos para as barras do botão X (fechar) quando o menu estiver ativo */
+.openbtn.active-menu .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.openbtn.active-menu .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.openbtn.active-menu .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Estilos para o menu de navegação móvel */
+#mobile-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: #333;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* Estilos para o menu de navegação móvel quando ativo */
+#mobile-menu.active-menu {
+  max-height: 500px; /* Altura máxima para exibir os itens */
+}
+
+#mobile-menu li {
+  float: left;
+}
+
+/* Estilos para os itens do menu de navegação móvel */
+#mobile-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Estilos para os itens do menu de navegação móvel ao passar o mouse */
+#mobile-menu li a:hover {
+  background-color: #444;
+}
