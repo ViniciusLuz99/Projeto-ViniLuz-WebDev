@@ -6,11 +6,16 @@
 
 /* Estilos para a barra de navegação móvel */
 #mobile-nav {
-  background-color: #333333d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 95%;
+  z-index: 100;
 }
 
 /* Estilos para a área da barra de navegação */
@@ -18,10 +23,14 @@
   display: flex;
   align-items: center;
   margin: 0 auto;
-  max-width: 1200px;
-  border: 1px solid red;
+  width: 95%;
+  border-radius: 8px;
+  max-width: 1280px;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--bg-200);
+  border: 1px solid var(--primary-100);
+  margin-top: 5%;
 }
 
 /* Estilos para o logotipo */
@@ -66,18 +75,30 @@
 
 /* Estilos para o menu de navegação móvel */
 #mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: absolute;
   list-style-type: none;
+  width: 100%;
   padding: 0;
   margin: 0;
+  margin-top: 30%;
   overflow: hidden;
   background-color: #333;
   max-height: 0;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out;
+  -ms-transition: max-height 0.5s ease-in-out;
+  -o-transition: max-height 0.5s ease-in-out;
 }
 
 /* Estilos para o menu de navegação móvel quando ativo */
 #mobile-menu.active-menu {
-  max-height: 500px; /* Altura máxima para exibir os itens */
+  max-height: 5000px; /* Altura máxima para exibir os itens */
 }
 
 #mobile-menu li {

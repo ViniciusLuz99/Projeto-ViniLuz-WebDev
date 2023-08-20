@@ -10,17 +10,23 @@
 /*Root*/
 :root {
   /* Cores */
+  --primary-100: #ff33cc; /* rosa neon */
+  --primary-200: #ff72ff;
+  --primary-300: #ffe1ff;
+  --accent-100: #00ccff; /* azul neon */
+  --accent-200: #006c9b;
+  --text-100: #f2f2f2;
+  --text-200: #d9d9d9;
+  --bg-100: #0f0f0f;
+  --bg-200: #141414;
+  --bg-300: #282828;
+  --bg-400: #4a4a4a;
+  --bg-500: #5e5e5e;
+  --bg-600: #777777;
 
-  --primary-100: #00ccff;
-  --primary-200: #6eb7ff;
-  --primary-300: #e4ffff;
-  --accent-100: #ff6aff;
-  --accent-200: #94009a;
-  --text-100: #ffffff;
-  --text-200: #e0e0e0;
-  --bg-100: #161616;
-  --bg-200: #252525;
-  --bg-300: #3c3c3c;
+  /*Neon shadow*/
+  --neon-primary-color: #ff33cc96;
+  --neon-secondary-color: #00ccff96;
 
   /*cores dos logos de Redes sociais */
   --instagram-pink: #e54784;
@@ -53,8 +59,8 @@ html {
 body {
   font-family: var(--fonte-corpo);
   font-size: 16px;
-  color: var(--black-1);
-  background-color: var(--white-1);
+  color: var(--text-100);
+  background-color: var(--bg-200);
 }
 
 /*
@@ -79,30 +85,39 @@ main {
   flex-direction: column;
 }
 
-
-.btn-container{
-  outline: 1px solid red;
+.btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 300px;
 }
 .whatsapp-btn {
-  background-color: var(--accent-200);
   color: var(--text-100);
   padding: 10px;
   min-width: 100%;
-  border-radius: 8px;
+  outline: 1px solid var(--primary-100);
   text-decoration: none;
+  border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+
+#header {
+  width: 100%;
+  background-color: var(--bg-100);
+}
+
 /* Style the home section */
 #home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
   background-color: var(--bg-100);
-  padding: 80px 0;
+  min-height: 90vh;
 }
 
 .home-content {
@@ -112,26 +127,27 @@ main {
   text-align: center;
   padding: 0 20px;
   gap: 20px;
-  outline: 1px solid red;
 }
 .home-text {
-  outline: 1px solid red;
+  max-width: 600px;
 }
 
 .home-text h1 {
   color: var(--text-100);
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+.home-text h1 span {
+  font-weight: normal;
 }
 
 .home-text p {
   color: var(--text-200);
-  font-size: 1.3rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.3;
 }
 
 /* Styles for the discount section */
 .discount-section {
-  outline: 1px solid red;
   padding: 1px 0;
 }
 
@@ -148,11 +164,115 @@ main {
 }
 
 .discount-text span {
-  color: var(--accent-100);
+  color: var(--accent-200);
   font-size: 18px;
   margin-right: 10px;
 }
 
+#home .btn-container {
+  max-width: 300px;
+  font-size: 1.1rem;
+}
+#home {
+  margin-bottom: 5rem;
+}
+/*About*/
+
+.desktop-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+#services,
+#features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  max-width: 95%;
+  margin-bottom: 2rem;
+}
+
+.services-text h2 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+.services-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.features-cards-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.feature-card {
+  display: flex;
+  /* flex: 1 0 300px; */
+  flex-direction: column;
+  border: 1px solid var(--primary-100);
+  padding: 20px;
+  border-radius: 5px;
+  width: 500px;
+  max-width: 90%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 44px;
+}
+
+.feature-icon {
+  display: flex;
+  margin-right: 15px;
+}
+
+.icon-circle {
+  background-color: var(--bg-200);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid var(--primary-100);
+  font-size: 30px;
+  margin-top: -50px;
+  margin-bottom: 5px;
+}
+
+.feature-card-text {
+  flex: 1 1 auto;
+}
+
+.feature-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.feature-card p {
+  margin: 10px 0;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.services-text h2 {
+  margin-bottom: 16px;
+}
+.services-text p {
+  margin-bottom: 16px;
+}
 
 /*Media Queries Desktop, tablets, Tvs...*/
 /* Estilos para tablets*/
@@ -161,6 +281,44 @@ main {
 
 /* Estilos para desktops */
 @media only screen and (min-width: 1024px) {
+  #services,
+  #features {
+    outline: 1px solid yellow;
+  }
+  .features-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  .feature-card {
+    width: 450px;
+  }
+}
+
+@media only screen and (min-width: 1284px) {
+  .desktop-row {
+    max-width: 1280px;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  #services,
+  #features {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    outline: 1px solid red;
+  }
+  .features-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .feature-card {
+    max-width: 300px;
+  }
 }
 
 /* Estilos para widescreen */
