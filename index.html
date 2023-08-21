@@ -92,8 +92,8 @@
           </section>
           <section id="features">
             <div class="features-content">
-              <section class="features-cards-container">
-                <div data-scroll="fade-up" class="feature-card">
+              <div class="features-cards-container">
+                <section data-scroll="fade-up" class="feature-card">
                   <div class="feature-icon">
                     <div class="icon-circle">
                       <i class="fas fa-globe"></i>
@@ -107,8 +107,8 @@
                       marca
                     </p>
                   </div>
-                </div>
-                <div data-scroll="fade-up" class="feature-card">
+                </section>
+                <section data-scroll="fade-up" class="feature-card">
                   <div class="feature-icon">
                     <div class="icon-circle">
                       <i class="fas fa-globe"></i>
@@ -122,8 +122,8 @@
                       o posicionamento do seu site em buscadores como o Google.
                     </p>
                   </div>
-                </div>
-                <div data-scroll="fade-up" class="feature-card">
+                </section>
+                <section data-scroll="fade-up" class="feature-card">
                   <div class="feature-icon">
                     <div class="icon-circle">
                       <i class="fas fa-globe"></i>
@@ -137,20 +137,19 @@
                       uma experiência consistente.
                     </p>
                   </div>
-                </div>
-              </section>
+                </section>
+              </div>
             </div>
           </section>
         </div>
       </div>
-
-      <section id="portfolio responsive-width">
-        <div class="portfolio-content">
-          <section class="portfolio-text">
-            <h2>Alguns Projetos feito por mim</h2>
-          </section>
-          <section class="portfolio-cards">
-            <div class="portfolio-card">
+      <section data-scroll="fade-up" id="portfolio" class="flexCenter">
+        <div class="portfolio-content flexCenter responsive-width">
+          <div class="portfolio-header">
+            <h2>Alguns Projetos feitos por mim</h2>
+          </div>
+          <div class="portfolio-cards">
+            <article class="portfolio-card">
               <div class="portfolio-card-img">
                 <picture>
                   <source
@@ -169,11 +168,34 @@
                 </picture>
               </div>
               <div class="portfolio-card-button">
-                <a href="#">Ver o site</a>
+                <a href="#" class="portfolio-card-button-link">Ver o site</a>
               </div>
-            </div>
+            </article>
             <!---->
-          </section>
+            <article class="portfolio-card">
+              <div class="portfolio-card-img">
+                <picture>
+                  <source
+                    srcset="./Assets/Images/portfolioImgs/1.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./Assets/Images/portfolioImgs/1.png"
+                    type="image/png"
+                  />
+                  <img
+                    src="./Assets/Images/portfolioImgs/1.png"
+                    loading="lazy"
+                    alt="Projeto Bloger"
+                  />
+                </picture>
+              </div>
+              <div class="portfolio-card-button">
+                <a href="#" class="portfolio-card-button-link">Ver o site</a>
+              </div>
+            </article>
+            <!---->
+          </div>
         </div>
       </section>
       <section id="discount">
