@@ -352,35 +352,47 @@ main {
 }
 
 .portfolio-card {
+  width: 90%;
   background-color: var(--bg-200);
-  border-radius: 10px;
+  outline: 1px solid var(--bg-300);
+  border-radius: 8px;
+  margin-inline: auto;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.portfolio-card-img img {
+  max-width: 100%;
+  margin-inline: auto;
+  height: auto;
   transition: all 0.3s;
 }
-.portfolio-card:hover img{
+
+.portfolio-card:hover img {
   transform: scale(1.01);
   -webkit-transform: scale(1.01);
   -moz-transform: scale(1.01);
   -ms-transform: scale(1.01);
   -o-transform: scale(1.01);
 }
-.portfolio-card-img img {
-  max-width: 100%;
-  height: auto;
-  transition: all 0.3s;
-}
 
 .portfolio-card-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   padding: 8px;
   text-align: center;
   background-color: var(--neon-primary-color);
+  transition: all 0.3s;
 }
-a.portfolio-card-button-link{
+a.portfolio-card-button-link {
   color: var(--text-100);
   text-decoration: none;
   font-weight: bold;
@@ -388,9 +400,9 @@ a.portfolio-card-button-link{
 }
 
 .portfolio-card-button:hover {
+  transition: all 0.3s;
   background-color: var(--accent-200);
 }
-
 
 /*animations*/
 [data-scroll="fade-up"] {
