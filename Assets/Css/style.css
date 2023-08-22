@@ -34,10 +34,10 @@
 :root {
   /* Cores */
   --primary-100: #ff33cc; /* rosa neon */
-  --primary-200: #ff72ff;
+  --primary-200: #970071;
   --primary-300: #ffe1ff;
   --accent-100: #00ccff; /* azul neon */
-  --accent-200: #006c9b;
+  --accent-200: #00afd6;
   --text-100: #f2f2f2;
   --text-200: #d9d9d9;
   --bg-100: #0f0f0f;
@@ -172,7 +172,7 @@ main {
 
 .home-text h1 {
   color: var(--text-100);
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   line-height: 1.1;
   margin-bottom: 8px;
 }
@@ -187,23 +187,23 @@ main {
 }
 
 /* Styles for the discount section */
-.discount-section {
+.home-discount-section {
   padding: 1px 0;
 }
 
-.discount-content {
+.home-discount-content {
   margin: 0 auto;
   text-align: center;
   padding: 0 1.5rem;
 }
 
-.discount-text {
+.home-discount-text {
   color: var(--text-200);
   font-size: 0.8rem;
   line-height: 1.6;
 }
 
-.discount-text span {
+.home-discount-text span {
   color: var(--accent-200);
   font-size: 18px;
   margin-right: 10px;
@@ -338,7 +338,7 @@ main {
 
 .portfolio-header h2 {
   text-align: center;
-  font-size: 28px;
+  font-size: 2.5rem;
   margin-block: 24px;
 }
 
@@ -403,6 +403,88 @@ a.portfolio-card-button-link {
   transition: all 0.3s;
   background-color: var(--accent-200);
 }
+/*
+discount
+*/
+/* Your existing CSS variables and rules */
+
+#discount {
+  margin-bottom: 5rem;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.discount-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  background: linear-gradient(to top, #3d002b63, #3d002b3b),
+    var(--primary-100) url(../Images/backgrounds/Abstract-bg.svg) no-repeat
+      center / cover;
+  padding: 24px 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.discount-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.discount-text {
+  text-align: center;
+  max-width: 500px;
+  color: var(--text-100);
+}
+
+.discount-text h2 {
+  font-size: 2.5rem;
+}
+
+.discount-description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.discount-description i {
+  color: var(--accent-100);
+}
+
+.discount-button {
+  width: 100%;
+  max-width: 500px;
+}
+
+.promo-btn {
+  display: inline-block;
+  color: var(--text1200);
+  font-size: 1.1rem;
+  font-weight: bold;
+  min-width: 100%;
+  padding: 10px 20px;
+  background: linear-gradient(#0f0f0f17, #0a0a0a49), var(--accent-100);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.promo-btn:hover {
+  color: var(--primary-200);
+  background-color: var(--text-100);
+}
+
+/* Your existing responsive-width rule */
+
+/* Add any additional styles you need here */
 
 /*animations*/
 [data-scroll="fade-up"] {
@@ -422,6 +504,16 @@ a.portfolio-card-button-link {
 
 /* Estilos para desktops */
 @media only screen and (min-width: 1024px) {
+  .discount-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .discount-text {
+    text-align: left;
+  }
+  .discount-button{
+    max-width: 25%;
+  }
 }
 
 @media only screen and (min-width: 1284px) {
