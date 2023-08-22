@@ -422,7 +422,7 @@ discount
   align-items: center;
   gap: 16px;
   text-align: center;
-  background: linear-gradient(to top, #3d002b63, #3d002b3b),
+  background: linear-gradient(to top, #3d002b63, #3d002b21),
     var(--primary-100) url(../Images/backgrounds/Abstract-bg.svg) no-repeat
       center / cover;
   padding: 24px 24px;
@@ -470,7 +470,7 @@ discount
   font-size: 1.1rem;
   font-weight: bold;
   min-width: 100%;
-  padding: 10px 20px;
+  padding: 16px 24px;
   background: linear-gradient(#0f0f0f17, #0a0a0a49), var(--accent-100);
   text-decoration: none;
   border-radius: 8px;
@@ -481,10 +481,6 @@ discount
   color: var(--primary-200);
   background-color: var(--text-100);
 }
-
-/* Your existing responsive-width rule */
-
-/* Add any additional styles you need here */
 
 /*animations*/
 [data-scroll="fade-up"] {
