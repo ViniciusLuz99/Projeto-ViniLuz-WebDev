@@ -128,6 +128,7 @@ main {
   max-width: 300px;
   outline: 1px solid var(--primary-100);
   border-radius: 8px;
+  transition: 0.3s ease;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -140,6 +141,28 @@ main {
   padding: 15px;
   min-width: 100%;
   text-decoration: none;
+  transition: 0.3s ease;
+}
+.whatsapp-btn:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.btn-container:hover {
+  outline: 1px solid var(--accent-200);
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
 }
 
 #header {
@@ -482,6 +505,117 @@ discount
   background-color: var(--text-100);
 }
 
+/*
+Faq
+*/
+#faq {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.faq-text h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.faq-details {
+  width: 98%;
+  margin-inline: auto;
+  max-width: 800px;
+}
+.faq-details details {
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: var(--bg-300);
+  margin-bottom: 24px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-details summary::marker {
+  display: none;
+}
+.faq-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 24px 14px;
+  outline: 1px solid var(--bg-500);
+  user-select: none;
+}
+
+.faq-details summary::after {
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+}
+
+.faq-details details[open] summary::after {
+  color: red;
+  transform: rotate(225deg);
+  transition: 0.3s ease;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.faq-answer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.faq-answer p {
+  font-size: 1.1rem;
+  color: var(--text-200);
+}
+.faq-details details[open] .faq-answer {
+  opacity: 1;
+  max-height: 1000px;
+  padding: 18px 14px;
+}
+
+.faq-contact {
+  margin-top: 20px;
+}
+
+#faq .btn-container {
+  text-align: center;
+  max-width: 100%;
+  background-color: var(--primary-100);
+}
+/* 
+From another project
+*/
+
+
+
 /*animations*/
 [data-scroll="fade-up"] {
   opacity: 0;
@@ -507,7 +641,7 @@ discount
   .discount-text {
     text-align: left;
   }
-  .discount-button{
+  .discount-button {
     max-width: 25%;
   }
 }
