@@ -11,3 +11,13 @@ const navToggler = () => {
 //   mobileMenu.classList.toggle("active");
 //   openBtn.classList.toggle("active");
 // }
+
+const backToTopButton = document.getElementById("BackToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 500) {
+    backToTopButton.classList.add("active");
+  } else {
+    backToTopButton.classList.remove("active");
+  }
+});

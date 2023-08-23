@@ -93,6 +93,14 @@ h5,
 h6 {
   font-family: var(--fonte-titulo);
 }
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
 /*
 Estilos da pagina
 */
@@ -613,8 +621,365 @@ Faq
 /* 
 From another project
 */
+/*
+---------------------------
+About
+---------------------------
+*/
+#about {
+  margin-bottom: 5rem;
+  background-image: linear-gradient(to bottom, var(--bg-200), #131313);
+  width: 100%;
+}
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.profileCard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  max-width: 700px;
+  background-color: var(--bg-600) var(--bg-300);
+  outline: 1px solid var(--primary-100);
+  border-block: 2px solid var(--primary-100);
+  box-shadow: 0 0 15px var(--neon-primary-color);
+  width: 97%;
+}
 
+.profileHeader {
+  height: 180px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  /*background profile*/
+  background: url("../Images/profile/palm-trees-7828313_1920.jpg") bottom center /
+    cover no-repeat;
+  border-bottom: 1px solid var(--black-5);
+  box-shadow: var(--shadow-M);
+}
 
+.profileHeader img {
+  margin: 90px 15px;
+  min-width: 150px;
+  max-width: 160px;
+  border-radius: 50%;
+  outline: 1px solid var(--text-100);
+  border: 1px solid var(--primary-100);
+  box-shadow: var(--shadow-M);
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.profileBody {
+  padding-inline: 15px;
+  margin-top: 35px;
+  width: 100%;
+}
+
+.ProfileName {
+  font-size: 1.5rem;
+  margin-top: 2.2rem;
+}
+
+.profileRole {
+  color: var(--primary-100);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: -8px;
+  text-shadow: 0 0 10px var(--neon-primary-color);
+}
+
+.profileBio {
+  font-size: 1rem;
+  font-weight: light;
+  text-indent: 2px;
+  padding: 1px;
+  margin: 14px auto;
+}
+
+.profileFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid var(--bg-500);
+  border-radius: 0 0 10px 10px;
+  text-shadow: var(--shadow-G);
+  background-color: var(--black-1);
+}
+.profileFooter a {
+  color: var(--text-200);
+}
+
+.profileFooter a i {
+  font-size: 1.5rem;
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+  z-index: 1;
+}
+
+.profileFooter a:hover i {
+  color: #e44e76;
+  transform: scale(1.5);
+  transition: ease-in-out 0.3s;
+}
+
+.profileFooter .fa-github:hover {
+  color: var(--text-200);
+}
+.profileFooter .fa-instagram:hover {
+  color: var(--instagram-pink);
+}
+.profileFooter .fa-linkedin:hover {
+  color: var(--linkedin-blue);
+}
+.profileFooter .fa-globe:hover {
+  color: var(--website-green);
+}
+/*
+---------------------------
+Contact
+---------------------------
+*/
+#contact {
+  background-color: var(--bg-100);
+  background: url(../Images/backgrounds/WorldMap.svg) top no-repeat;
+  background-size: 80%;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contactCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 auto;
+  gap: 8px;
+  width: 95%;
+  max-width: 1280px;
+}
+.ContactField {
+  border: 1px solid var(--bg-300);
+  transition: 0.3s ease-in-out;
+}
+.ContactField:hover {
+  border: 1px solid var(--neon-primary-color);
+  box-shadow: 0 0 10px var(--neon-primary-color);
+  transition: 0.3s ease-in-out;
+}
+fieldset {
+  padding: 1rem;
+  background-color: var(--bg-200);
+  border: 1px solid var(--bg-300);
+  border-radius: 3px;
+  margin-bottom: 8px;
+}
+legend {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+.ContactField > legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/*Card contact*/
+.ContactCard {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.ContactCard ul {
+  list-style-type: none;
+}
+.contactLink {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contactLink a {
+  color: var(--text-100);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.contactLink i {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin: 8px;
+  outline: 1px solid var(--bg-300);
+  border-radius: 5px;
+}
+.contactLink a:hover {
+  color: var(--accent-100);
+  transition: 0.3s ease;
+}
+/*Email form*/
+.emailContact {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 1px solid var(--bg-300);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--text-200);
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary-100);
+  transition: 0.3s ease;
+}
+input:hover,
+textarea:hover {
+  outline: 1px solid var(--bg-500);
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+input:invalid:not(:placeholder-shown):focus,
+textarea:invalid:not(:placeholder-shown):focus {
+  border-color: red;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.btn-submit {
+  background-color: var(--primary-100);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text-100);
+  border: none;
+  padding: 14px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  color: var(--bg-100);
+  background-color: var(--accent-100);
+}
+
+/*
+---------------------------
+Right Fixed Button
+---------------------------
+*/
+.rightFixedButtons {
+  position: fixed;
+  bottom: 2rem;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 1;
+}
+.rightFixedButtons a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-decoration: none;
+  color: var(--text-100);
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+}
+#BackToTop {
+  display: none;
+}
+#BackToTop.active {
+  display: flex;
+  opacity: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  animation: rocketLaunch 0.5s;
+  border: 1px solid var(--bg-500);
+  background-color: rgba(0, 0, 0, 0.521);
+  transition: 0.2s ease-in-out;
+}
+
+@keyframes rocketLaunch {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#BackToTop a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+#BackToTop:hover {
+  border-color: var(--primary-100);
+  box-shadow: 0 0 10px var(--primary-100);
+}
 
 /*animations*/
 [data-scroll="fade-up"] {
@@ -643,6 +1008,20 @@ From another project
   }
   .discount-button {
     max-width: 25%;
+  }
+
+  #contact {
+    background: url(../Images/backgrounds/WorldMap.svg) center center
+      no-repeat/cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .contactCards {
+    gap: 20px;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-around;
   }
 }
 
