@@ -183,9 +183,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 90vh;
+  background: url(../Images/backgrounds/polygon.svg),    linear-gradient( 90deg, #ff33cc07, var(--bg-200), var(--bg-200), #ff33cc07);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 70vh;
   width: 100%;
-  background-color: var(--bg-100);
+  border-radius: 0 0 3em 3em;
+  border-bottom: 1px solid var(--primary-100);
+  box-shadow: 1px 1px 50px #07070727, 1px 1px 10px var(--neon-primary-color);
+  -webkit-border-radius: 0 0 3em 3em;
+  -moz-border-radius: 0 0 3em 3em;
+  -ms-border-radius: 0 0 3em 3em;
+  -o-border-radius: 0 0 3em 3em;
 }
 
 .home-content {
@@ -206,6 +217,7 @@ main {
   font-size: 2.8rem;
   line-height: 1.1;
   margin-bottom: 8px;
+  text-shadow: 1px 3px 5px #07070727;
 }
 .home-text h1 span {
   font-weight: normal;
@@ -243,6 +255,7 @@ main {
 #home .btn-container {
   max-width: 300px;
   font-size: 1.1rem;
+  box-shadow: 1px 1px 50px #07070727, 1px 1px 10px var(--neon-primary-color);
 }
 #home {
   margin-bottom: 5rem;
@@ -1030,7 +1043,7 @@ footer {
   justify-content: center;
   gap: 14px;
 }
-.footer-social a{
+.footer-social a {
   margin: 0;
   padding: 0;
   text-decoration: none;
