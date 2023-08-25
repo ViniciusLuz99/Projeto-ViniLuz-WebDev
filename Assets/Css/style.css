@@ -397,7 +397,7 @@ main {
     var(--bg-300),
     var(--bg-300),
     var(--bg-300),
-   var(--bg-200)
+    var(--bg-200)
   );
   width: 100%;
   margin-top: -1rem;
@@ -484,6 +484,7 @@ discount
   padding-block: 3rem;
   margin-inline: auto;
   width: 100%;
+  background-color: var(--bg-200);
   outline: 1px solid var(--bg-300);
 }
 
@@ -496,21 +497,15 @@ discount
   gap: 16px;
   text-align: center;
   background: linear-gradient(to top, #0000005e, #3d002b21),
-  var(--primary-100) url(../Images/backgrounds/Abstract-bg.svg) no-repeat
+    var(--primary-100) url(../Images/backgrounds/Abstract-bg.svg) no-repeat
       center / cover;
   padding: 24px 24px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px #07070727, 0 1px 8px var(--neon-primary-color);
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-}
-
-.discount-content:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .discount-text {
@@ -555,7 +550,8 @@ Faq
 */
 #faq {
   width: 100%;
-  margin-bottom: 5rem;
+  padding-block: 2rem 3rem;
+  border-bottom: 1px solid var(--bg-300);
 }
 .faq-text h2 {
   text-align: center;
@@ -653,7 +649,7 @@ Faq
   max-width: 100%;
   background-color: var(--primary-100);
 }
-/* 
+/*
 From another project
 */
 /*
@@ -662,7 +658,7 @@ About
 ---------------------------
 */
 #about {
-  margin-bottom: 5rem;
+  padding-block: 2rem;
   background-image: linear-gradient(to bottom, var(--bg-200), #131313);
   width: 100%;
 }
