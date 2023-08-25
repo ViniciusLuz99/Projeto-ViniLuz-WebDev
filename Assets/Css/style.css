@@ -481,9 +481,10 @@ discount
 /* Your existing CSS variables and rules */
 
 #discount {
-  padding-block: 2rem;
+  padding-block: 3rem;
   margin-inline: auto;
   width: 100%;
+  outline: 1px solid var(--bg-300);
 }
 
 .discount-content {
@@ -494,8 +495,8 @@ discount
   align-items: center;
   gap: 16px;
   text-align: center;
-  background: linear-gradient(to top, #3d002b63, #3d002b21),
-    var(--primary-100) url(../Images/backgrounds/Abstract-bg.svg) no-repeat
+  background: linear-gradient(to top, #0000005e, #3d002b21),
+  var(--primary-100) url(../Images/backgrounds/Abstract-bg.svg) no-repeat
       center / cover;
   padding: 24px 24px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
