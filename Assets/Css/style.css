@@ -40,8 +40,8 @@
   --accent-200: #00afd6;
   --text-100: #f2f2f2;
   --text-200: #d9d9d9;
-  --bg-100: #0f0f0f;
-  --bg-200: #141414;
+  --bg-100: #111111;
+  --bg-200: #1a1a1a;
   --bg-300: #282828;
   --bg-400: #4a4a4a;
   --bg-500: #5e5e5e;
@@ -184,7 +184,7 @@ main {
   flex-direction: column;
   justify-content: center;
   background: url(../Images/backgrounds/polygon.svg),
-    linear-gradient(90deg, #ff33cc07, var(--bg-200), var(--bg-200), #ff33cc07);
+    linear-gradient(90deg, #4e003b1c, var(--bg-100), var(--bg-100), #4e003b1c);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -201,9 +201,6 @@ main {
 }
 
 .home-content {
-  /* width: 95%;
-  alterar
-  max-width: 1200px; */
   margin: 0 auto;
   text-align: center;
   padding: 0 20px;
@@ -254,17 +251,19 @@ main {
 }
 
 #home .btn-container {
+  background-color: var(--bg-100);
   max-width: 300px;
   font-size: 1.1rem;
   box-shadow: 1px 1px 50px #07070727, 1px 1px 10px var(--neon-primary-color);
 }
-#home {
-  margin-bottom: 5rem;
-}
+
 /*About*/
 .container {
+  padding-top: 5rem;
   margin-inline: auto;
   width: 100%;
+  background-image: url(../Images/backgrounds/diagonal-lines.svg);
+  background-color: var(--bg-100);
 }
 .desktop-row {
   display: flex;
@@ -292,7 +291,6 @@ main {
   margin-bottom: 16px;
 }
 .services-text p {
-  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 16px;
 }
@@ -316,43 +314,54 @@ main {
 }
 .feature-card {
   display: flex;
-  /* flex: 1 0 300px; */
+  background-color: var(--bg-200);
   flex-direction: column;
   flex-wrap: wrap;
   border: 1px solid var(--primary-100);
   padding: 20px;
-  border-radius: 5px;
   width: 95%;
   max-width: 550px;
+  margin-top: 30px;
+  box-shadow: 1px 1px 10px #07070727, 0 2px 5px var(--neon-primary-color);
+  border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  margin-top: 30px;
-  /* margin-bottom: 44px; */
+  transition: 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: translateY(-5px); /* Move o card para cima */
 }
 
 .feature-icon {
   display: flex;
   margin-right: 15px;
+  transition: 0.3s ease;
 }
 
 .icon-circle {
-  background-color: var(--bg-200);
+  font-size: 30px;
   width: 70px;
   height: 70px;
+  background-color: var(--bg-200);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--text-200);
   outline: 2px solid var(--primary-100);
-  font-size: 30px;
   margin-top: -50px;
   margin-bottom: 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .feature-card-text {
+  color: var(--text-200);
   flex: 1 1 auto;
 }
 
@@ -364,7 +373,7 @@ main {
 
 .feature-card p {
   margin: 8px 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.3;
 }
 
