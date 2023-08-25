@@ -184,7 +184,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(../Images/backgrounds/polygon.svg),    linear-gradient(90deg, #4e003b1c, var(--bg-100), var(--bg-100), #4e003b1c);
+  background: url(../Images/backgrounds/polygon.svg),
+    linear-gradient(90deg, #4e003b1c, var(--bg-100), var(--bg-100), #4e003b1c);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -387,7 +388,6 @@ main {
 }
 
 #portfolio {
-  
   background: linear-gradient(
     to bottom,
     var(--bg-300),
@@ -702,8 +702,7 @@ About
   /*background profile*/
   background: url("../Images/profile/palm-trees-7828313_1920.jpg") bottom center /
     cover no-repeat;
-  border-bottom: 1px solid var(--black-5);
-  box-shadow: var(--shadow-M);
+  border-bottom: 1px solid var(--bg-400);
 }
 
 .profileHeader img {
@@ -713,7 +712,6 @@ About
   border-radius: 50%;
   outline: 1px solid var(--text-100);
   border: 1px solid var(--primary-100);
-  box-shadow: var(--shadow-M);
   object-fit: cover;
   overflow: hidden;
 }
@@ -795,7 +793,8 @@ Contact
   padding-block: 2rem;
   border-top: 2px solid var(--bg-400);
   border-radius: 2rem 2rem 0 0;
-  background: var(--bg-100) url(../Images/backgrounds/WorldMap.svg) top    no-repeat;
+  background: var(--bg-100) url(../Images/backgrounds/WorldMap.svg) top
+    no-repeat;
   background-size: 80%;
   width: 100%;
   padding-block: 2rem;
@@ -974,6 +973,7 @@ Right Fixed Button
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -994,6 +994,34 @@ Right Fixed Button
   -ms-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
 }
+
+#whatsFixed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--whatsapp-green);
+  border-radius: 10px;
+  border: 1px solid var(--text-200);
+  box-shadow: 0 0 10px var(--whatsapp-green);
+  transition: 0.2s ease-in-out;
+  font-size: 24px;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  animation: rocketLaunch 0.5s, pulse 2s infinite ease-in-out;
+  -webkit-animation: rocketLaunch 0.5s, pulse 2s infinite ease-in-out;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 20px var(--whatsapp-green);
+  }
+  100% {
+    box-shadow: 0 0 10px var(--whatsapp-green);
+  }
+}
+
+
 #BackToTop {
   display: none;
 }
