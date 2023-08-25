@@ -100,6 +100,7 @@ h2 {
 
 p {
   font-size: 1.1rem;
+  text-shadow: 1px 3px 5px #07070727;
 }
 /*
 Estilos da pagina
@@ -183,21 +184,15 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(../Images/backgrounds/polygon.svg),
-    linear-gradient(90deg, #4e003b1c, var(--bg-100), var(--bg-100), #4e003b1c);
+  background: url(../Images/backgrounds/polygon.svg),    linear-gradient(90deg, #4e003b1c, var(--bg-100), var(--bg-100), #4e003b1c);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
   min-height: 70vh;
   width: 100%;
-  border-radius: 0 0 3em 3em;
   border-bottom: 1px solid var(--primary-100);
   box-shadow: 1px 1px 50px #07070727, 1px 1px 10px var(--neon-primary-color);
-  -webkit-border-radius: 0 0 3em 3em;
-  -moz-border-radius: 0 0 3em 3em;
-  -ms-border-radius: 0 0 3em 3em;
-  -o-border-radius: 0 0 3em 3em;
 }
 
 .home-content {
@@ -392,12 +387,13 @@ main {
 }
 
 #portfolio {
+  
   background: linear-gradient(
     to bottom,
     var(--bg-300),
     var(--bg-300),
     var(--bg-300),
-    var(--bg-200)
+    rgba(0, 0, 0, 0.048)
   );
   width: 100%;
   margin-top: -1rem;
@@ -478,14 +474,19 @@ a.portfolio-card-button-link {
 /*
 discount
 */
-/* Your existing CSS variables and rules */
-
 #discount {
   padding-block: 3rem;
   margin-inline: auto;
   width: 100%;
-  background-color: var(--bg-200);
-  outline: 1px solid var(--bg-300);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.103),
+    var(--bg-200),
+    var(--bg-200),
+    var(--bg-200),
+    rgba(0, 0, 0, 0.103)
+  );
+  border-bottom: 1px solid var(--bg-300);
 }
 
 .discount-content {
@@ -551,6 +552,14 @@ Faq
 #faq {
   width: 100%;
   padding-block: 2rem 3rem;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.048),
+    var(--bg-200),
+    var(--bg-200),
+    var(--bg-200),
+    rgba(0, 0, 0, 0.048)
+  );
   border-bottom: 1px solid var(--bg-300);
 }
 .faq-text h2 {
@@ -570,7 +579,7 @@ Faq
   border-radius: 5px;
   background-color: var(--bg-300);
   margin-bottom: 24px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px #07070727;
 }
 
 .faq-details summary::marker {
@@ -658,8 +667,14 @@ About
 ---------------------------
 */
 #about {
-  padding-block: 2rem;
-  background-image: linear-gradient(to bottom, var(--bg-200), #131313);
+  padding-block: 2rem 4rem;
+  background-image: linear-gradient(
+    to top,
+    var(--bg-200),
+    var(--bg-200),
+    var(--bg-200),
+    rgba(0, 0, 0, 0.103)
+  );
   width: 100%;
 }
 #about h2 {
@@ -723,7 +738,7 @@ About
 }
 
 .profileBio {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: light;
   text-indent: 2px;
   padding: 1px;
@@ -777,11 +792,17 @@ Contact
 ---------------------------
 */
 #contact {
-  background-color: var(--bg-100);
-  background: url(../Images/backgrounds/WorldMap.svg) top no-repeat;
+  padding-block: 2rem;
+  border-top: 2px solid var(--bg-400);
+  border-radius: 2rem 2rem 0 0;
+  background: var(--bg-100) url(../Images/backgrounds/WorldMap.svg) top    no-repeat;
   background-size: 80%;
   width: 100%;
-  margin-bottom: 5rem;
+  padding-block: 2rem;
+  -webkit-border-radius: 2rem 2rem 0 0;
+  -moz-border-radius: 2rem 2rem 0 0;
+  -ms-border-radius: 2rem 2rem 0 0;
+  -o-border-radius: 2rem 2rem 0 0;
 }
 
 #contact h2 {
@@ -1017,12 +1038,8 @@ footer
 footer {
   width: 100%;
   padding-block: 2rem 1rem;
-  border-radius: 24px 24px 0 0;
+  outline: 1px solid var(--bg-200);
   background-color: var(--bg-100);
-  -webkit-border-radius: 24px 24px 0 0;
-  -moz-border-radius: 24px 24px 0 0;
-  -ms-border-radius: 24px 24px 0 0;
-  -o-border-radius: 24px 24px 0 0;
 }
 
 .footer-content {
