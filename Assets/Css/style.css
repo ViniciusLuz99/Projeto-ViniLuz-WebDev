@@ -519,9 +519,6 @@ discount
   color: var(--text-100);
 }
 
-.discount-text h2 {
-}
-
 .discount-description {
   line-height: 1.5;
 }
