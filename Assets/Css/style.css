@@ -378,10 +378,31 @@ main {
 }
 
 /*Portfolio*/
-#portfolio {
-  background-color: black;
+.top-image {
   width: 100%;
-  margin-bottom: 5rem;
+  height: 100%;
+
+  object-fit: cover;
+  margin-top: -3rem;
+}
+.top-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#portfolio {
+  background: linear-gradient(
+    to bottom,
+    var(--bg-300),
+    var(--bg-300),
+    var(--bg-300),
+   var(--bg-200)
+  );
+  width: 100%;
+  margin-top: -1rem;
+  outline: 2px solid var(--bg-300);
+  padding-bottom: 1.5rem;
 }
 
 .portfolio-content {
@@ -406,8 +427,6 @@ main {
 
 .portfolio-card {
   width: 90%;
-  background-color: var(--bg-200);
-  outline: 1px solid var(--bg-300);
   border-radius: 8px;
   margin-inline: auto;
   overflow: hidden;
@@ -440,7 +459,7 @@ main {
 
 .portfolio-card-button {
   width: 100%;
-  padding: 8px;
+  padding: 4px;
   text-align: center;
   background-color: var(--neon-primary-color);
   transition: all 0.3s;
@@ -462,7 +481,7 @@ discount
 /* Your existing CSS variables and rules */
 
 #discount {
-  margin-bottom: 5rem;
+  padding-block: 2rem;
   margin-inline: auto;
   width: 100%;
 }
@@ -1084,6 +1103,9 @@ footer {
 /*Media Queries Desktop, tablets, Tvs...*/
 /* Estilos para tablets*/
 @media screen and (min-width: 768px) {
+  #portfolio {
+    margin-top: -1em;
+  }
   .footer-content {
     display: flex;
     flex-direction: row;
@@ -1098,6 +1120,9 @@ footer {
 
 /* Estilos para desktops */
 @media only screen and (min-width: 1024px) {
+  #portfolio {
+    margin-top: -1em;
+  }
   .discount-content {
     display: flex;
     flex-direction: row;
@@ -1150,4 +1175,7 @@ footer {
 
 /* Estilos para telas ultrawide */
 @media only screen and (min-width: 2560px) {
+  #portfolio {
+    margin-top: -3em;
+  }
 }
