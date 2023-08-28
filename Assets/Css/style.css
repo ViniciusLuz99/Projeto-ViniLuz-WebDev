@@ -184,7 +184,8 @@ main {
   background-color: var(--bg-100);
 }
 
-#desktop-nav, #desktop {
+#desktop-nav,
+#desktop {
   display: none;
 }
 /* Style the home section */
@@ -445,7 +446,7 @@ main {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
-.portfolio-card-img{
+.portfolio-card-img {
   overflow: hidden;
 }
 .portfolio-card-img img {
@@ -1189,12 +1190,74 @@ footer {
 
 /* Estilos para desktops */
 @media only screen and (min-width: 1024px) {
-  #desktop-nav, #desktop {
-    display: block;
+  #desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
- 
-}
+  #desktop-nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a7a;
+    outline: 1px solid #4a4a4a3a;
+    border-bottom: 1px solid var(--primary-200);
+    width: 85%;
+    max-width: 1280px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  #desktop-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    height: 55px;
+  }
+
+  #desktop-nav li {
+    padding: 0;
+    margin: 0;
+  }
+
+  #desktop-nav a {
+    display: block;
+    padding: 18px;
+    text-decoration: none;
+    color: var(--text-200);
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+
+  #desktop-nav a:hover {
+    color: var(--accent-100);
+    border-bottom: 2px solid;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
 
   #portfolio {
     margin-top: -1em;
