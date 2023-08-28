@@ -178,7 +178,25 @@ main {
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
 }
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+  border: none;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--neon-primary-color);
+}
 
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-200);
+}
+/*Seletor de texto*/
+::selection {
+  background-color: var(--primary-200);
+}
 #header {
   width: 100%;
   background-color: var(--bg-100);
