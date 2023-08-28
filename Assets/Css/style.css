@@ -1157,18 +1157,19 @@ footer {
 }
 
 /*Media Queries Desktop, tablets, Tvs...*/
-/* Estilos para tablets*/
-@media screen and (min-width: 768px) {
-  #portfolio {
-    margin-top: -1em;
-  }
-
+@media screen and (min-width: 480px) {
   .profileHeader {
     background: url("../Images/profile/palm-trees-7828313_1920.webp"),
       url("../Images/profile/palm-trees-7828313_1920.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
+  }
+}
+/* Estilos para tablets*/
+@media screen and (min-width: 768px) {
+  #portfolio {
+    margin-top: -1em;
   }
 
   .footer-content {
