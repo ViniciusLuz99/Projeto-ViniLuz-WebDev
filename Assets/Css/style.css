@@ -666,12 +666,19 @@ Faq
 details[open] .faq-answer {
   opacity: 1;
   transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
 }
 details[open] .faq-answer {
   animation: fade-up 3s;
   -webkit-animation: fade-up 3s;
 }
-
+.fade-up-animation {
+  animation: fade-up 0.3s ease-in-out forwards;
+  -webkit-animation: fade-up 0.3s ease-in-out forwards;
+}
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -682,6 +689,7 @@ details[open] .faq-answer {
     max-height: 5000px;
   }
 }
+
 .faq-contact {
   margin-top: 20px;
 }

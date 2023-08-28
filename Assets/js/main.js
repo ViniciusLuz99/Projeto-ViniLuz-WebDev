@@ -23,3 +23,17 @@ window.addEventListener("scroll", () => {
 });
 
 
+
+/*Animação do details*/
+const detailsElements = document.querySelectorAll('details');
+
+detailsElements.forEach(detailsElement => {
+  detailsElement.addEventListener('toggle', () => {
+    const answerElement = detailsElement.querySelector('.faq-answer');
+    if (detailsElement.open) {
+      answerElement.classList.add('fade-up-animation');
+    } else {
+      answerElement.classList.remove('fade-up-animation');
+    }
+  });
+});
