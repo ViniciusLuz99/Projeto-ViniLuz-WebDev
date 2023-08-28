@@ -39,7 +39,7 @@
 :root {
   /* Cores */
   --primary-100: #ff33cc;
-  --primary-200: #a8007e;
+  --primary-200: #a5067d;
   --primary-300: #ffe1ff;
   --accent-100: #00ccff;
   --accent-200: #00afd6;
@@ -184,6 +184,9 @@ main {
   background-color: var(--bg-100);
 }
 
+#desktop-nav, #desktop {
+  display: none;
+}
 /* Style the home section */
 #home {
   display: flex;
@@ -1186,6 +1189,13 @@ footer {
 
 /* Estilos para desktops */
 @media only screen and (min-width: 1024px) {
+  #desktop-nav, #desktop {
+    display: block;
+  }
+
+ 
+}
+
   #portfolio {
     margin-top: -1em;
   }

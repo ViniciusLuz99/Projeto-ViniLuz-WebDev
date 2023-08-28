@@ -12,7 +12,9 @@
 }
 
 .navbar {
-  position: fixed;
+  /*if Fixed, stays always in front of the content and scrolls with it*/
+  /*if absolute, stays on top of the content*/
+  position: absolute;
   top: 0;
   width: 95%;
   z-index: 100;
@@ -22,20 +24,35 @@
 .navbar {
   display: flex;
   align-items: center;
-  margin-inline: auto;
-  width: 95%;
-  border-radius: 8px;
-  max-width: 1280px;
   justify-content: space-between;
-  align-items: center;
-  background-color: var(--bg-200);
-  border: 1px solid var(--primary-100);
-  margin-top: 5%;
+  width: 90%;
+  max-width: 1280px;
+  margin-inline: auto;
+  border-radius: 10px;
+  /* outline: 1px solid var(--bg-400);
+  background-color: var(--bg-200); */
+  /*border: 1px solid var(--primary-100);
+  */
+  margin-top: 1%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 /* Estilos para o logotipo */
 .logo {
-  margin-left: 20px;
+  /*no logo*/
+  width: 100px;
+}
+.contact-link {
+  background-color: var(--primary-100);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: none;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* Estilos para o botão do menu hamburguer */
@@ -43,8 +60,12 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  padding: 15px 20px;
-  outline: none;
+  padding: 10px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 /* Estilos para as barras do botão hamburguer */
@@ -56,13 +77,17 @@
   width: 25px;
   height: 3px;
   background-color: white;
-  margin: 4px 0;
+  margin: 4px auto;
   transition: 0.4s;
 }
 
 /* Estilos para as barras do botão X (fechar) quando o menu estiver ativo */
 .openbtn.active-menu .bar:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-4px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-4px, 6px);
+  -moz-transform: rotate(-45deg) translate(-4px, 6px);
+  -ms-transform: rotate(-45deg) translate(-4px, 6px);
+  -o-transform: rotate(-45deg) translate(-4px, 6px);
 }
 
 .openbtn.active-menu .bar:nth-child(2) {
@@ -70,38 +95,62 @@
 }
 
 .openbtn.active-menu .bar:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-4px, -6px);
+  -webkit-transform: rotate(45deg) translate(-4px, -6px);
+  -moz-transform: rotate(45deg) translate(-4px, -6px);
+  -ms-transform: rotate(45deg) translate(-4px, -6px);
+  -o-transform: rotate(45deg) translate(-4px, -6px);
 }
 
 /* Estilos para o menu de navegação móvel */
 #mobile-menu {
   position: absolute;
-  top: 100%; /* Altura do menu em relação ao topo do elemento pai*/
+  /*Alturadomenuemrelaçãoaotopodoelementopai*/
+  top: 98%;
   display: flex;
   flex-direction: column;
+  outline: 1px solid #00000000;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 5px;
   margin-inline: auto;
   list-style-type: none;
   width: 100%;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--bg-200);
+  border-radius: 10px;
   max-height: 0;
-  transition: max-height 0.5s ease-in-out;
-  -webkit-transition: max-height 0.5s ease-in-out;
-  -moz-transition: max-height 0.5s ease-in-out;
-  -ms-transition: max-height 0.5s ease-in-out;
-  -o-transition: max-height 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 /* Estilos para o menu de navegação móvel quando ativo */
 #mobile-menu.active-menu {
-  max-height: 5000px; /* Altura máxima para exibir os itens */
+  max-height: 5000px;
+  outline: 1px solid var(--primary-100);
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+#mobile-menu li {
+  opacity: 0;
 }
 
-#mobile-menu li {
+#mobile-menu.active-menu li {
+  margin-inline: auto;
+  width: 99%;
+  opacity: 1;
+  border-bottom: 1px solid var(--bg-300);
   float: left;
 }
 
@@ -109,12 +158,20 @@
 #mobile-menu li a {
   display: block;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 18px 16px;
   text-decoration: none;
 }
 
 /* Estilos para os itens do menu de navegação móvel ao passar o mouse */
 #mobile-menu li a:hover {
-  background-color: #444;
+  background-color: var(--bg-400);
+}
+
+@media only screen and (min-width: 1024px) {
+  #mobile {
+    display: none;
+  }
+  #desktop {
+    display: block;
+  }
 }
