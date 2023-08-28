@@ -1071,20 +1071,24 @@ Right Fixed Button
   border-radius: 10px;
   border: 1px solid var(--text-200);
   box-shadow: 0 0 10px var(--whatsapp-green);
-  transition: 0.2s ease-in-out;
   font-size: 24px;
   width: 45px;
   height: 45px;
   border-radius: 10px;
-  animation: rocketLaunch 0.5s, pulse 2s infinite ease-in-out;
-  -webkit-animation: rocketLaunch 0.5s, pulse 2s infinite ease-in-out;
+  transition: 0.2s ease-in-out;
+  animation: pulse 2s infinite ease-in-out;
+  -webkit-animation: pulse 2s infinite ease-in-out;
 }
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 20px var(--whatsapp-green);
+    box-shadow: 0 0 20px  var(--whatsapp-green);
+  }
+  50% {
+    box-shadow: 0 0 15px var(--whatsapp-green);
+    opacity: 0.8;
   }
   100% {
-    box-shadow: 0 0 10px var(--whatsapp-green);
+    box-shadow: 0 0 20px  var(--whatsapp-green);
   }
 }
 
