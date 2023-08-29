@@ -759,8 +759,7 @@ About
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   /*background profile*/
-  background: url("../Images/profile/palm-trees-7828313_600.webp"),
-    url("../Images/profile/palm-trees-7828313_1920.jpg");
+  background: url("../Images/profile/palm-trees-7828313_600.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
