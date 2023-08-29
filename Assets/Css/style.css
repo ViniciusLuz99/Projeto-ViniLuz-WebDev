@@ -760,7 +760,7 @@ About
   border-radius: 10px 10px 0px 0px;
   /*background profile*/
   background: url("../Images/profile/palm-trees-7828313_600.webp"),
-    url("../Images/profile/palm-trees-7828313_600.jpg");
+    url("../Images/profile/palm-trees-7828313_1920.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -1081,14 +1081,14 @@ Right Fixed Button
 }
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 20px  var(--whatsapp-green);
+    box-shadow: 0 0 20px var(--whatsapp-green);
   }
   50% {
     box-shadow: 0 0 15px var(--whatsapp-green);
     opacity: 0.8;
   }
   100% {
-    box-shadow: 0 0 20px  var(--whatsapp-green);
+    box-shadow: 0 0 20px var(--whatsapp-green);
   }
 }
 
